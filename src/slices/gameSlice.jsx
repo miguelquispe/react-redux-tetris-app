@@ -1,10 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { defaultState } from '../utils';
 
 export const slice = createSlice({
   name: 'game',
-  initialState: {
-    value: ''
-  },
+  initialState: defaultState(),
   reducers: {
     moveRight(state){
       state.value = 'right'
